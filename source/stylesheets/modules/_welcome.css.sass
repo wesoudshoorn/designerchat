@@ -1,0 +1,53 @@
+.mod-welcome
+  display: table
+  min-height: 100%
+  width: 100%
+  $size: 600px
+  text-align: center
+
+  .inner
+    display: table-cell
+    width: 100%
+    padding: 50px
+    text-align: left
+    +min-height(700px)
+      vertical-align: middle
+
+  h1
+    margin-bottom: 0
+    max-width: $size
+    margin: 0 auto 20px
+
+  p
+    max-width: $size
+    margin: 0 auto 30px
+    font-size: 20px
+    opacity: 1
+
+  form
+    max-width: $size
+    margin: 0 auto
+
+  input
+    font-size: 16px
+    border-radius: 4px
+    height: 50px
+    line-height: 30px
+    border: 0
+    padding: 0 20px
+    width: 100%
+    max-width: 300px
+    margin-right: 20px
+    margin-bottom: 10px
+    &:focus,
+    &:hover
+      outline: none
+      box-shadow: 0 0 0 5px rgba(white,.1)
+
+    +max-width(560px)
+      max-width: 100%
+
+  .button
+    padding: 0 25px
+    +min-width(561px)
+      width: auto
